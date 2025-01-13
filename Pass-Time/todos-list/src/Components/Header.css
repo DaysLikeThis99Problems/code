@@ -1,0 +1,43 @@
+ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #5e5142ac;
+  }
+  
+  li a{
+    margin-left: 20px;
+    margin-right: 40px;
+    color: black;
+    font-size: 20px;
+  }
+  
+  li p{
+    font-size: 30px;
+    color: whitesmoke;
+    margin-left: 80px;
+    margin-right: 100px;
+  }
+
+  li button{
+    background-color: indianred;
+    border-radius: 15%;
+    box-shadow: 50px red;
+    width: 100px;
+    height: 40px;
+    justify-content: center;
+    margin-left: 20px;
+  }
+
+  li input{
+    margin-left: 50px;
+    height: 30px;
+    margin-left: 600px;
+  }
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: gray;
+  }

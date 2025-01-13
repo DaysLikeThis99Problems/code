@@ -1,0 +1,21 @@
+form{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 10px 10px;
+}
+div{
+    margin-top: 10px;
+}
+form button{
+    margin-top: 20px;
+    background-color: lightgreen;
+    width: 100px;
+    color: black;
+}
+#desc{
+    width: 70%;
+}
+button{
+    width: 70px;
+    height: 30px;
+    background-color: red;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descendant Selector Demo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Descendant Selector Demo</h1>
+
+    <div class="container">
+        <h2>This is a heading inside the container</h2>
+        <p>This is a paragraph directly inside the container.</p>
+        <div>
+            <h2>This one is also h2 but in nested div tab.</h2>
+            <p>
+                This is a nested paragraph(still affected by the descendant Selector.)
+            </p>
+            <p class="special">
+                This is special tab
+            </p>
+        </div>
+    </div>
+    <div>
+        <h2>This is outside div for timepass.</h2>
+    </div>
+</body>
+</html>

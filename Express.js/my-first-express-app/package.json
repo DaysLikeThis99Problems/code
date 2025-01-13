@@ -1,0 +1,20 @@
+{
+  "name": "my-first-express-app",
+  "version": "2.0.0",
+  "description": "My first express application",
+  "keywords": [
+    "Expressjs",
+    "nodejs",
+    "web"
+  ],
+  "license": "ISC",
+  "author": "100HAM",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

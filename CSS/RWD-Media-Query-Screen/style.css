@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Default styles for Larger Desktop */
+.header{
+    background-color: blue;
+    height: 30px;
+    height: 100px;
+    color: white;
+    padding: 40px;
+}
+
+/* Small Desktop: Adjust styles for screen widths up to 1439px */
+/* @media(max-width: 1439px){
+    .header{
+        background-color: crimson;
+    }
+} */
+
+@media screen and (max-width:1439px){
+    .header{
+        background-color: crimson;
+    }
+}
+
+/* Tablet: Adjust styles for screen widths up to 1279px */
+@media(max-width: 1279px){
+    .header{
+        background-color: green;
+    }
+}
+
+/* Larger Phones: Adjust styles for screen widths up to 767px */
+@media(max-width: 767px){
+    .header{
+        background-color: green;
+    }
+}
+
+/* Mobiles: Adjust styles for screen widths up to 374px */
+@media(max-width: 374px){
+    .header{
+        background-color: yellow;
+    }
+}

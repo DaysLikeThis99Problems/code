@@ -1,0 +1,25 @@
+body{
+    background-color: lavender;
+    font-family:sans-serif ; 
+    padding: 20px;
+}
+h1{
+    color: blue;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+p{
+    line-height: 1.6;
+    color: red;
+}
+#second{
+    color: blue;
+}
+a{
+    background-color: blue;
+    padding: 10px;
+    color: honeydew;
+    text-decoration: wavy;
+    border-radius: 10px;
+}

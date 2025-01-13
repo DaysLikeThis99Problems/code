@@ -1,0 +1,25 @@
+form{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 10px 10px;
+}
+#div2{
+    font-size: large;
+    margin-top: 20px;
+}
+#desc{
+    margin-top: 10px;
+    width: 70%;
+}
+#btn{
+    font-size: medium;
+    width: 200px;
+    height: 40px;
+    background-color:lightgreen;
+    border-radius: 15px;
+    margin-top: 30px;
+    color: black;
+}
+#title{
+    margin-top: 10px;
+    width:40%;
+}

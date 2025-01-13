@@ -1,0 +1,52 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Percentage Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="calculator">
+        <div class="calculator-header">
+          <h2>Percentage Calculator</h2>
+          <p class="subtitle">
+            Simple and Precise Calculations 
+        </p>
+        </div>
+
+        <div class="calculator-body">
+          <div class="input-section">
+            <div class="input-group">
+              <label for="number">Amount ($)</label>
+              <input type="number" id="number" placeholder="e.g., 250000" />
+              <span class="input-icon">$</span>
+            </div>
+            <div class="input-group">
+              <label for="percent">Percentage (%)</label>
+              <input type="number" id="percent" step="0.1" placeholder="e.g., 5.5" />
+              <span class="input-icon">%</span>
+            </div>
+            <button id="calculateBtn">Calculate</button>
+          </div>
+
+          <div class="results" id="results">
+            <h3>Loan Summary</h3>
+            <div class="result-grid">
+              <div class="result-item">
+                <span class="result-label">Percentage Amount</span>
+                <span class="result-value" id="percentageResult">$0.00</span>
+              </div>
+              <div class="result-item">
+                <span class="result-label">Final Amount</span>
+                <span class="result-value" id="finalResult">$0.00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

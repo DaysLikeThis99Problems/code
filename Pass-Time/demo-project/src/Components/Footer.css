@@ -1,0 +1,9 @@
+footer{
+    height: 50px;
+    background-color: black;
+    color: aliceblue;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+}

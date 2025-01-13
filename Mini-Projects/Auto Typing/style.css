@@ -1,0 +1,11 @@
+*{
+    text-align: center;
+    background: linear-gradient(to right, #60a5fa, #a78bfa);
+}
+
+h1{
+    text-align: center;
+    margin-top: 350px;
+    font-weight: bolder;
+    color: rgb(69, 77, 74);
+}

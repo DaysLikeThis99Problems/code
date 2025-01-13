@@ -1,0 +1,47 @@
+/* Container to hold the profile card */
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Basic styles for the profile card */
+.profile-card{
+    border:2px solid whitesmoke;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 190px;
+    text-align: center;
+    box-shadow: 0px 4px 8px black;
+    margin: 10px;
+}
+
+/* Styling for profile image */
+.profile-card img{
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Styling for name */
+.profile-card h3{
+    margin: 10px 0;
+}
+
+/* Styling for description */
+.profile-card p{
+    color: dimgrey;
+    font-size: 0.9em;
+    line-height: 1.4;
+}
+
+/* Style the static button for appearance */
+#generateBtn{
+    background-color: aquamarine;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
