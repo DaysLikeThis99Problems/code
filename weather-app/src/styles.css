@@ -62,8 +62,8 @@ body {
   cursor: pointer;
 } */
 #btn{
-  width: 70px; 
-  height: 44px; 
+  width: 90px; 
+  height: 55px; 
   border: none;
   border-radius: 9%; 
   background-color: #84cef5;
@@ -72,7 +72,15 @@ body {
   outline: none;
   cursor: pointer;
 }
-
+button #logo{
+  scale: 1.5;
+}
+#btn:hover{
+  scale: 1.1;
+}
+button:hover #logo{
+  scale: 1.7;
+}
 .SearchEngine button:hover {
   background-color: #fff;
 }
@@ -199,8 +207,31 @@ body {
   font-size: 16px;
   font-weight: 500;
 }
+ul{
+  text-align: center;
+  list-style-type: none;
+}
 
-
+#s1btn{
+  border: gold 2px 3px;
+  background-color: red;
+  color: #000000;
+  border-radius: 10%;
+  height: 30px;
+  box-shadow: #555 5px 5px;
+  margin: 20px;
+}
+#s1btn:hover{
+  scale: 1.15;
+  cursor:pointer
+}
+.footer{
+  height: 70px;
+  width: 100%;
+  background-color: red;
+  color: azure;
+  text-align: center;
+}
 
 /* Desktop view */
 @media screen and (min-width: 768px) {
@@ -209,14 +240,31 @@ body {
     margin-bottom: 100px; /* Increased margin for better spacing */
   }
 
-  .credit {
-    position: fixed;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-bottom: 0;
-    width: auto;
+  li{
+    text-align: left;
+    margin-left: 150px;
   }
+  li #sp{
+    position: absolute;
+    margin-left: 60px;
+  }
+  li #sp2{
+    position: absolute;
+    margin-left: 67px;
+  }
+  li #sp3{
+    position: absolute;
+    margin-left: 81px;
+  }
+  li #sp4{
+    position: absolute;
+    margin-left: 77px;
+  }
+  li #sp5{
+    position: absolute;
+    margin-left: 72px;
+  }
+
 }
 
 /* Tablet view */
@@ -225,6 +273,7 @@ body {
     width: 80%;
     padding: 20px;
     margin-bottom: 80px; /* Adjusted margin for better spacing */
+    
   }
 
   .SearchEngine input {
@@ -301,9 +350,10 @@ body {
 /* Mobile view */
 @media screen and (max-width: 480px) {
   .App {
-    width: 80%;
+    width: 89%;
     padding: 10px;
-    margin-bottom: 100px; /* Increased margin for better spacing */
+    margin-bottom: 100px;
+    margin-top: 20px; /* Increased margin for better spacing */
   }
 
   .SearchEngine input {
@@ -360,15 +410,32 @@ body {
   .day-temperature {
     font-size: 16px;
   }
-
-  .credit {
-    position: fixed;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-bottom: 20px;
-    text-align: center;
-    font-size: 14px;
-    width: 100%;
+  li{
+    text-align: left;
+    margin-left: 0;
+  }
+  li #sp{
+    position: absolute;
+    margin-left: 2%;
+  }
+  li #sp2{
+    position: absolute;
+    margin-left: 5%;
+  }
+  li #sp3{
+    position: absolute;
+    margin-left: 5%;
+  }
+  li #sp4{
+    position: absolute;
+    margin-left: 5%;
+  }
+  li #sp5{
+    position: absolute;
+    margin-left: 5%;
+  }
+  #s1btn{
+    margin: 5px;
+    width: 80px;
   }
 }
