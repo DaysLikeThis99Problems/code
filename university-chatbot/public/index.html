@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DYPIEMR Chatbot</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    body { font-family: Arial, sans-serif; background: black; margin: 0; padding: 0; }
+    #chat-box {
+      color: black;
+      background-color: whitesmoke;
+      height: 450px;
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 10px;
+      overflow-y: auto;
+      border: 1px solid #ddd;
+    }
+    .message { margin: 10px 0; }
+    .user { text-align: right; color: blue; }
+    .bot { text-align: left; }
+    #chat-form {
+      max-width: 900px;
+      margin: 10px auto;
+      display: flex;
+      gap: 10px;
+    }
+    #user-input {
+      flex: 1;
+      padding: 10px;
+      font-size: 16px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+    #footer{
+      font-size: x-large;
+      height: 55px;
+      background-color: gray;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      position: sticky;
+      gap: 50px;
+    }
+    i:hover{
+      scale: 1.5;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="chat-box"></div>
+
+  <form id="chat-form">
+    <input id="user-input" type="text" placeholder="Ask me something..." autocomplete="off" />
+    <button type="submit">Send</button>
+  </form>
+  <div id="footer">
+    <div>
+      <i class="fa-solid fa-house"><a href="https://www.dypiemr.ac.in/">DYPIEMR</a></i>
+    </div>
+    <div>
+      <i class="fa-solid fa-location-dot"><a href="https://www.google.com/maps/place/%E0%AA%A1%E0%AB%89.+%E0%AA%A1.%E0%AA%AF.+%E0%AA%AA%E0%AA%BE%E0%AA%9F%E0%AA%BF%E0%AA%B2+%E0%AA%87%E0%AA%A8%E0%AB%8D%E0%AA%B8%E0%AB%8D%E0%AA%9F%E0%AA%BF%E0%AA%9F%E0%AB%8D%E0%AA%AF%E0%AB%82%E0%AA%9F+%E0%AA%93%E0%AA%AB+%E0%AA%8F%E0%AA%A8%E0%AB%8D%E0%AA%9C%E0%AA%BF%E0%AA%A8%E0%AA%BF%E0%AA%AF%E0%AA%B0%E0%AA%BF%E0%AA%82%E0%AA%97,+%E0%AA%AE%E0%AB%87%E0%AA%A8%E0%AB%87%E0%AA%9C%E0%AA%AE%E0%AB%87%E0%AA%A8%E0%AB%8D%E0%AA%9F+%E0%AA%8F%E0%AA%A8%E0%AB%8D%E0%AA%A1+%E0%AA%B0%E0%AA%BF%E0%AA%B8%E0%AA%B0%E0%AB%8D%E0%AA%9A/@18.6457115,73.757415,17z/data=!3m1!4b1!4m6!3m5!1s0x3bc2b9ef588fffff:0xed7869959e7d6300!8m2!3d18.6457064!4d73.7599899!16s%2Fg%2F11b7q869hz?entry=ttu&g_ep=EgoyMDI1MDQxNC4xIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D">Map</a></i>
+    </div>
+    <div>
+      <i class="fa-solid fa-headset"><a href="https://www.dypiemr.ac.in/">Contact</a></i>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
