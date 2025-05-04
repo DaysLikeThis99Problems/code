@@ -23,23 +23,29 @@ connectToDB();
 const userSchema = new mongoose.Schema(
   {
     username: {
+      required: true,
       type: String,
-      required: [true, "Please username is required"],
-      validate: {
-        validator: function (value) {
-          return /^[a-zA-Z0-9]+$/.test(value); //only alphameric
-        },
-        message: "Username can only contain alphanumeric character",
+      set: (value) => {
+        return validator.escape(value);
       },
     },
     email: {
+      required: true,
       type: String,
-      required: [true, "Please email is required"],
       validate: {
-        validator: function (value) {
-          return value.endsWith("@gmail.com"); //email must end with @gmail.com
+        validator: (value) => {
+          return validator.isEmail(value);
         },
-        message: "Email must be from the domain @gamil.com",
+      },
+    },
+    age: {
+      type: String,
+      required: true,
+      validate: {
+        validator: (value) => {
+          return validator.isInt(value, { min: 0, max: 120 });
+        },
+        message: "Invalid Age",
       },
     },
   },
@@ -55,14 +61,16 @@ const User = mongoose.model("User", userSchema);
 const createUser = async () => {
   try {
     await User.create({
-      email: "emm@yahoo.com",
-      username: "#ben",
+      email: "emm@gmail.com",
+      username: "John_Doe<",
+      age: 200,
     });
   } catch (error) {
     console.log(error);
   }
 };
 createUser();
+
 
   
 //Start the server
